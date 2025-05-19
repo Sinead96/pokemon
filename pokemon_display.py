@@ -7,7 +7,7 @@ class Pokemon:
     self.is_caught = is_caught
 
   def speak (self): 
-    print(name + name)
+    print(self.name + ',' + self.name)
 
   def display_details (self):
     print (f'Entry Name: {self.entry}')
@@ -23,10 +23,16 @@ clefairy = Pokemon (35, 'Clefairy', 'Fairy', 'On nights with a full moon, Clefai
 
 clefairy.display_details()
 
+clefairy.speak()
+
 ninetales = Pokemon (38, 'Ninetales', 'Fire', 'Some legends claim that each of its nine tails has its own unique type of special mystical power.', False)
 
 ninetales.display_details()
 
+ninetales.speak()
+
 ditto = Pokemon (132, 'Ditto', 'Normal', 'Its transformation ability is perfect. However, if made to laugh, it can’t maintain its disguise.', False)
 
 ditto.display_details()
+
+ditto.speak()
